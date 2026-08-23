@@ -6,3 +6,6 @@ print("Present value:", present_value)
 print("Interest rate:", interest_rate)
 print("Periods:", periods)
 print("Future value:", round(future_value, 2))
+
+interest_earned = future_value - present_value
+print("Interest earned:", round(interest_earned, 2))
