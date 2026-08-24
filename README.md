@@ -1,7 +1,55 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# Algorithms and Data Analysis Team Activity
+## Purpose of each file
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+**exercises/hello_world.py**
+This is our first program in Python. It saves the names of the team in a list and
+then prints a welcome message for each one. We used it to check that Python works
+inside the Codespace and to practice a `for` loop and the function `len()`.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+**exercises/financial_calculation.py**
+This program calculates how much money you have in the future if you invest an
+amount today. It uses the compound interest formula `FV = PV * (1 + r) ** n`, and
+at the end it also shows how much of that money is interest.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## How to run each program
+
+Open the Codespace and in the terminal write:
+
+python exercises/hello_world.py
+
+python exercises/financial_calculation.py
+
+
+The two commands are written from the main folder of the repository. In Python the
+** means "to the power of".
+
+## Expected output
+
+**exercises/hello_world.py**
+
+Hello World and welcome to the team!
+Course: Algorithms and Data Analysis
+Welcome, Kira Espinoza
+Welcome, Júlia Monteiro
+Welcome, Camila Licona
+Welcome, Karla Serna
+We are 4 students ready to learn Python!
+
+**exercises/financial_calculation.py**
+Present value: 500
+Interest rate: 0.1
+Periods: 24
+Future value: 4924.87
+Interest earned: 4424.87
+
+With 500 at 10% for 24 periods the money
+becomes 4,924.87, and 4,424.87 of that is only interest.
+
+## Team member responsibilities
+Student 1 — Python Basics Kira Espinoza `exercises/hello_world.py` 
+Student 2 — Financial Calculation  Júlia Monteiro `exercises/financial_calculation.py` 
+Student 3 — Documentation  Camila Licona  `README.md` 
+Student 4 — Testing and Integration Karla Serna She reviews the three pull requests and checks that everything runs together correctly
+
+Each one of us worked in her own branch and nobody worked directly on main. To put
+the changes in main we opened a pull request and Karla reviewed it before the merge.
