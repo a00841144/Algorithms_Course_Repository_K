@@ -10,9 +10,7 @@ then prints a welcome message for each one. We used it to check that Python work
 inside the Codespace and to practice a `for` loop and the function `len()`.
 
 **exercises/financial_calculation.py**
-This program calculates how much money you have in the future if you invest an
-amount today. It uses the compound interest formula `FV = PV * (1 + r) ** n`, and
-at the end it also shows how much of that money is interest.
+exercises/financial_calculation.py This program calculates how much money you have in the future if you invest an amount today. It uses the compound interest formula FV = PV * (1 + r) ** n, applied to two different scenarios, and compares which one grows to a higher future value.
 
 ## How to run each program
 
@@ -39,20 +37,17 @@ Welcome, Karla Serna
 We are 4 students ready to learn Python!
 
 **exercises/financial_calculation.py**
-Present value: 500
-Interest rate: 0.1
-Periods: 24
-Future value: 4924.87
-Interest earned: 4424.87
+Scenario 1 future value: 4924.87 Scenario 2 future value: 2011.4 Scenario 1 earns 2913.47 more than Scenario 2
 
-With 500 at 10% for 24 periods the money
-becomes 4,924.87, and 4,424.87 of that is only interest.
+With the same 500 present value and 24 periods, Scenario 1 (10% interest) grows to a higher future value than Scenario 2 (6% interest), showing how a higher interest rate leads to significantly more growth over time.
 
 ## Team member responsibilities
-Student 1 — Python Basics Kira Espinoza `exercises/hello_world.py` 
+Student 1 — Python Basics Kira Espinoza `exercises/hello_world.py` . 
 Student 2 — Financial Calculation  Júlia Monteiro `exercises/financial_calculation.py` 
 Student 3 — Documentation  Camila Licona  `README.md` 
-Student 4 — Testing and Integration Karla Serna She reviews the three pull requests and checks that everything runs together correctly
+Student 4 — Testing and Integration Karla Serna She reviews the three pull requests and checks that everything runs together correctly.
+
+As extra, after publishing the instructions on the platform, Kira made some changes to the files. The rest of the team checked the pull requests and approve them.
 
 Each one of us worked in her own branch and nobody worked directly on main. To put
 the changes in main we opened a pull request and Karla reviewed it before the merge.
