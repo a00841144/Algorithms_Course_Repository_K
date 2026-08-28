@@ -39,7 +39,7 @@ We are 4 students ready to learn Python!
 **exercises/financial_calculation.py**
 Scenario 1 future value: 4924.87 Scenario 2 future value: 2011.4 Scenario 1 earns 2913.47 more than Scenario 2
 
-With the same 500 present value and 24 periods, Scenario 1 (10% interest) grows to a higher future value than Scenario 2 (6% interest), showing how a higher interest rate leads to significantly more growth over time.
+With the same 500 present value and 24 periods, Scenario 1 (10% interest) grows to a higher future value than Scenario 2 (6% interest), showing how a higher interest rate leads to significantly more growth over time
 
 ## Team member responsibilities
 Student 1 — Python Basics Kira Espinoza `exercises/hello_world.py` . 
