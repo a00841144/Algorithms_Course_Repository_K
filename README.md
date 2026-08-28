@@ -44,7 +44,7 @@ Scenario 2: Present value: 500 Interest rate: 0.06 Periods: 24 Future value: 202
 
 Scenario 1 earns 2900.4 more than Scenario 2
 
-With the same 500 present value and 24 periods, Scenario 1 (10% interest) grows to a higher future value than Scenario 2 (6% interest), showing how a higher interest rate leads to significantly more growth over time.
+With the same 500 present value and 24 periods, Scenario 1 (10% interest) grows to a higher future value than Scenario 2 (6% interest), showing how a higher interest rate leads to significantly more growth over time
 
 ## Team member responsibilities
 Student 1 — Python Basics Kira Espinoza `exercises/hello_world.py` . 
