@@ -1,5 +1,8 @@
 # Algorithms and Data Analysis Team Activity
-## Purpose of each file
+## Purpose of activity 1
+The purpose of activity 1 was for us to personally start working our coding in Github, understanding how the platform works, how we cvan create files and save, commit and push the changes. Following that, through this activity we were able to practice in Github, but form a collaborative perspective.
+
+## Description of each file
 
 **exercises/hello_world.py**
 This is our first program in Python. It saves the names of the team in a list and
@@ -53,3 +56,7 @@ Student 4 — Testing and Integration Karla Serna She reviews the three pull req
 
 Each one of us worked in her own branch and nobody worked directly on main. To put
 the changes in main we opened a pull request and Karla reviewed it before the merge.
+
+## Git workflow used by the team.
+We follow the course main logical workflow: Save > Commit > Push > Verify > Stop
+In addition, each one of us worked in her own branch, and nobody worked directly on main. To put the changes into main, we opened a pull request, and Karla reviewed it before the merge.
