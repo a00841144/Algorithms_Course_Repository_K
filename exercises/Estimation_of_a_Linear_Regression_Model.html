@@ -8244,7 +8244,107 @@ Nevertheless, we need to highlight that rather than a predictive model, the expl
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Overall, after analyzing the results from excel, we found that the results are very similar, if not the same. For the results, all the results, coefficients, intercepts, R squares, p-value, etc. are practically the same, the only difference is tha in excel you get more information through the decimals.</p>
+<p>Overall, after analyzing the results from excel, we found that the results are very similar. For the results, all the results, coefficients, intercepts, R squares, p-value, etc. are practically the same, the only difference is that in excel you get more information through the decimals.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=93354a65">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Python (Lagged)</th>
+<th>Excel (Lagged)</th>
+<th>Python (Unlagged)</th>
+<th>Excel (Unlagged)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observations</td>
+<td>498</td>
+<td>498</td>
+<td>499</td>
+<td>499</td>
+</tr>
+<tr>
+<td>R²</td>
+<td>0.003</td>
+<td>0.002646</td>
+<td>0.516</td>
+<td>0.516317</td>
+</tr>
+<tr>
+<td>Adjusted R²</td>
+<td>-0.001</td>
+<td>-0.001383</td>
+<td>0.514</td>
+<td>0.514366</td>
+</tr>
+<tr>
+<td>F-statistic</td>
+<td>0.6567</td>
+<td>0.656722</td>
+<td>264.7</td>
+<td>264.732264</td>
+</tr>
+<tr>
+<td>Significance F (p-value)</td>
+<td>0.519</td>
+<td>0.518999</td>
+<td>5.90e-79</td>
+<td>5.90387E-79</td>
+</tr>
+<tr>
+<td>Intercept (coef)</td>
+<td>0.0020</td>
+<td>0.001984</td>
+<td>0.0002</td>
+<td>0.000151</td>
+</tr>
+<tr>
+<td>Intercept (p-value)</td>
+<td>0.118</td>
+<td>0.118424</td>
+<td>0.864</td>
+<td>0.864122</td>
+</tr>
+<tr>
+<td>Coef. Rate variable</td>
+<td>0.0012</td>
+<td>0.001211</td>
+<td>0.0498</td>
+<td>0.049763</td>
+</tr>
+<tr>
+<td>p-value Rate variable</td>
+<td>0.963</td>
+<td>0.963464</td>
+<td>0.007</td>
+<td>0.007034</td>
+</tr>
+<tr>
+<td>Coef. SOX variable</td>
+<td>-0.0543</td>
+<td>-0.054319</td>
+<td>0.7469</td>
+<td>0.746884</td>
+</tr>
+<tr>
+<td>p-value SOX variable</td>
+<td>0.252</td>
+<td>0.252446</td>
+<td>0.000</td>
+<td>1.91036E-78</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -8256,16 +8356,16 @@ Nevertheless, we need to highlight that rather than a predictive model, the expl
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>With the purpose of reflection, the main difference that I identify is that in python, you can directly and automatically extract data and create data sets, while in excel you need to already have the excel file.
-For ease of use, for small data sets, and if you already have the data set, I think that using excel is easier, but for accesing information and larger data sets, python makes it more easy.
-For level of cutomization, I feel that python opens you infinite possibilities, this is a simple excerside, but I think that you can really play with the program in orderto customize your results.<br/>
+For ease of use, for small data sets, and if you already have the data set, I think that using excel is easier, but for accessing information and larger data sets, python makes it more easy.
+For the level of customization, I feel that python opens you infinite possibilities, this is a simple exercise, but I think that you can really play with the program in order to customize your results.
 For automation, python is better, as you can paste all your code in one single cell, or make changes and have results in seconds, while in excel there is a series of steps you have to follow, and doing that several times can be inconvenient.
-For reproducibility, i feel that both are consistent with the results they give you.
-For depth in analysis, I feel that python offers you with infinite possibilities, while excel has finite options.
+For reproducibility, I feel that both are consistent with the results they give you.
+For depth in analysis, I feel that python offers you infinite possibilities, while excel has finite options.
 For ability to handle large datasets, definitely python is better, as excel has a row limit and could become slow while working with larger data sets.
-For scalability, pyhton is better, as it would allow to leverage its use in bigger projects.
-For application in the financial field, excel is good for academic purposes, and small practices, while python is a better tool to work with more advance models, handle larger data and extract real life and current information very fast.
-Overall, I would say that the advantages of excel are familiarity, ease of use and that is an app that you probably already use in other things in your life, while the main disadvantages are limit of information and that you need to get the data set separately. For financial use, I would say that is better for simpler things, like budgeting.
-For python the main advantages is that through an API allows you to get data very fast, can process and model big data, has a lot of possibilities for different models and customizations, between others, while for disadvantages, I would say that is hard to use if you are not familiar with it. For specific financial situations, I would say that is better for stock analysis, predictions, decision making, etc.</p>
+For scalability, python is better, as it would allow it to leverage its use in bigger projects.
+For application in the financial field, excel is good for academic purposes, and small practices, while python is a better tool to work with more advanced models, handle larger data and extract real life and current information very fast.
+Overall, I would say that the advantages of excel are familiarity, ease of use and that it is an app that you probably already use in other things in your life, while the main disadvantages are limited information and that you need to get the data set separately. For financial use, I would say that is better for simpler things, like budgeting.
+For python the main advantages is that through an API allows you to get data very fast, can process and model big data, has a lot of possibilities for different models and customizations, among others, while for disadvantages, I would say that it is hard to use if you are not familiar with it. For specific financial situations, I would say that is better for stock analysis, predictions, decision making, etc.</p>
 <p>Overall, I prefer excel for simpler practices, like record expenses, make budgets or lists, even maybe create scenarios and forecasts, while I prefer python to build financial models regarding the stock market.</p>
 </div>
 </div>
