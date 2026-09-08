@@ -7510,12 +7510,34 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2c318688">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=968f13a4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Deliverable-1:-Description-and-Initial-Data-Analysis">Deliverable 1: Description and Initial Data Analysis<a class="anchor-link" href="#Deliverable-1:-Description-and-Initial-Data-Analysis">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf075e35">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1.-Data-Acquisition-and-Cleaning">1. Data Acquisition and Cleaning<a class="anchor-link" href="#1.-Data-Acquisition-and-Cleaning">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2c318688">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
@@ -7524,7 +7546,7 @@ a.anchor-link {
 <span class="n">tickers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"WALMEX.MX"</span><span class="p">,</span> <span class="s2">"AC.MX"</span><span class="p">,</span> <span class="s2">"FEMSAUBD.MX"</span><span class="p">,</span> <span class="s2">"BIMBOA.MX"</span><span class="p">,</span> <span class="s2">"ALSEA.MX"</span><span class="p">,</span> <span class="s2">"AAPL"</span><span class="p">,</span> <span class="s2">"MSFT"</span><span class="p">,</span> <span class="s2">"AMZN"</span><span class="p">,</span> <span class="s2">"KO"</span><span class="p">,</span> <span class="s2">"PG"</span><span class="p">]</span>
 
 <span class="c1"># Data window: 2 years ending on the current date (September 7, 2026)</span>
-<span class="n">start_date</span> <span class="o">=</span> <span class="s2">"2024-08-31"</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="s2">"2021-08-31"</span>
 <span class="n">end_date</span> <span class="o">=</span> <span class="s2">"2026-08-31"</span>
 
 <span class="n">raw_data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">tickers</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end_date</span><span class="p">,</span> <span class="n">auto_adjust</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">"Close"</span><span class="p">]</span>
@@ -7541,12 +7563,18 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[**************        30%                       ]  3 of 10 completed</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>[*********************100%***********************]  10 of 10 completed
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7593,69 +7621,69 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<th>2024-09-02</th>
-<td>NaN</td>
-<td>164.607086</td>
-<td>54.153042</td>
-<td>NaN</td>
-<td>67.793777</td>
-<td>183.738907</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>59.112640</td>
+<th>2021-08-31</th>
+<td>148.090591</td>
+<td>104.969269</td>
+<td>37.502819</td>
+<td>173.539505</td>
+<td>47.127098</td>
+<td>142.697906</td>
+<td>48.567837</td>
+<td>289.722443</td>
+<td>125.225494</td>
+<td>62.062920</td>
 </tr>
 <tr>
-<th>2024-09-03</th>
-<td>220.921951</td>
-<td>165.154251</td>
-<td>52.822525</td>
-<td>176.250000</td>
-<td>66.529579</td>
-<td>179.069214</td>
-<td>68.981865</td>
-<td>403.072662</td>
-<td>165.353516</td>
-<td>57.841602</td>
+<th>2021-09-01</th>
+<td>148.753860</td>
+<td>103.679169</td>
+<td>38.362537</td>
+<td>173.949997</td>
+<td>46.969456</td>
+<td>138.168991</td>
+<td>48.895580</td>
+<td>289.674408</td>
+<td>126.500702</td>
+<td>61.915268</td>
 </tr>
 <tr>
-<th>2024-09-04</th>
-<td>219.017883</td>
-<td>164.069199</td>
-<td>52.171837</td>
-<td>173.330002</td>
-<td>68.507896</td>
-<td>183.649246</td>
-<td>68.556694</td>
-<td>402.541046</td>
-<td>166.661057</td>
-<td>56.813557</td>
+<th>2021-09-02</th>
+<td>149.865784</td>
+<td>101.131409</td>
+<td>40.129734</td>
+<td>173.156006</td>
+<td>46.709797</td>
+<td>139.743881</td>
+<td>48.964584</td>
+<td>289.021912</td>
+<td>126.597473</td>
+<td>60.516994</td>
 </tr>
 <tr>
-<th>2024-09-05</th>
-<td>220.535172</td>
-<td>166.712311</td>
-<td>51.394890</td>
-<td>177.889999</td>
-<td>67.436707</td>
-<td>181.865631</td>
-<td>67.243385</td>
-<td>402.039001</td>
-<td>166.253632</td>
-<td>56.028503</td>
+<th>2021-09-03</th>
+<td>150.499771</td>
+<td>100.417389</td>
+<td>39.126732</td>
+<td>173.902496</td>
+<td>45.819557</td>
+<td>138.748352</td>
+<td>48.930084</td>
+<td>289.012268</td>
+<td>126.685417</td>
+<td>60.482243</td>
 </tr>
 <tr>
-<th>2024-09-06</th>
-<td>218.988144</td>
-<td>166.128052</td>
-<td>50.462555</td>
-<td>171.389999</td>
-<td>66.770836</td>
-<td>182.035950</td>
-<td>67.215042</td>
-<td>395.453033</td>
-<td>166.367325</td>
-<td>55.710747</td>
+<th>2021-09-06</th>
+<td>NaN</td>
+<td>100.912331</td>
+<td>40.081974</td>
+<td>NaN</td>
+<td>46.338867</td>
+<td>141.229065</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>61.316006</td>
 </tr>
 </tbody>
 </table>
@@ -7664,12 +7692,25 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7d6bf5b6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>First,we selected 10 stocks, 5 Mexican and 5 US stocks, because the firm invest in stocks both from Mexico and the US. We obtained their historical information through the API yfinance.
+Something important to highlight is that the data is the adjusted closing prices, as some stocks pay dividends.
+Through the function head(),  we observe the first 5 rows of values from. the stocks closing prices.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b513c38c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">raw_data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -7686,21 +7727,32 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(514, 10)
+<pre>(1293, 10)
 Ticker
-AAPL           15
-AC.MX          16
-ALSEA.MX       16
-AMZN           15
-BIMBOA.MX      16
-FEMSAUBD.MX    16
-KO             15
-MSFT           15
-PG             15
-WALMEX.MX      16
+AAPL           39
+AC.MX          37
+ALSEA.MX       37
+AMZN           39
+BIMBOA.MX      37
+FEMSAUBD.MX    37
+KO             39
+MSFT           39
+PG             39
+WALMEX.MX      37
 dtype: int64
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0f09a852">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Through the function .shape(), we can observe that the shape of the dataset is 514 rows and the 10 columns of the stocks. On the. other side, through the function .isna().sum(), we can. notice thatthere. aremany. missing values in all the columns, so we need to fix it.</p>
 </div>
 </div>
 </div>
@@ -7709,7 +7761,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">fondo</span> <span class="o">=</span> <span class="n">raw_data</span><span class="o">.</span><span class="n">ffill</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -7729,7 +7781,7 @@ dtype: int64
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Saved fondo.csv with shape: (513, 10)
+<pre>Saved fondo.csv with shape: (1293, 10)
 Ticker
 AAPL           0
 AC.MX          0
@@ -7747,12 +7799,36 @@ dtype: int64
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0dd90cee">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Trough the function .ffill(), the code replaces each NaN with the last known value for that column, we decided to do this, as if the market was closed that day, there is no new price.
+Trough the function .dropna(), the code removes rows that are still NaN after ffill.
+We also converted the data set into a cvs file named fondo, so we could have the data clean and ready to use.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e9951019">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.-Identification-of-Dependent-and-Independent-Variables">2. Identification of Dependent and Independent Variables<a class="anchor-link" href="#2.-Identification-of-Dependent-and-Independent-Variables">¶</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b98c5107">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">returns</span> <span class="o">=</span> <span class="n">fondo</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -7771,16 +7847,28 @@ dtype: int64
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Date
-2024-09-04   -0.000611
-2024-09-05   -0.002756
-2024-09-06   -0.009593
-2024-09-09    0.009042
-2024-09-10   -0.003491
+2021-09-01   -0.000322
+2021-09-02    0.000761
+2021-09-03   -0.005031
+2021-09-06    0.007234
+2021-09-07   -0.003090
 Name: Fondo_Return, dtype: float64</pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=02fedd4d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>With the function .pct_change(), we are able to convert the daily prices into daily percentage returns. In addition, through .mean(axis=1), we get the daily average of returns of the. portfolio, with the assumption that all the stocks have equal weights.</p>
+<h1 id="Dependent-variable:-fondo_return,-or-the-equal-weighted-daily-return-of-the-10-stock-portfolio">Dependent variable: fondo_return, or the equal-weighted daily return of the 10 stock portfolio<a class="anchor-link" href="#Dependent-variable:-fondo_return,-or-the-equal-weighted-daily-return-of-the-10-stock-portfolio">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7789,28 +7877,24 @@ Name: Fondo_Return, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">tech</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">fondo_return</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">tech_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">fondo_return_full</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 
-<span class="c1"># Lagged return (momentum, avoids leakage)</span>
-<span class="n">tech</span><span class="p">[</span><span class="s2">"Lag_Return"</span><span class="p">]</span> <span class="o">=</span> <span class="n">fondo_return</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">tech_full</span><span class="p">[</span><span class="s2">"Lag_Return"</span><span class="p">]</span> <span class="o">=</span> <span class="n">fondo_return_full</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">tech_full</span><span class="p">[</span><span class="s2">"SMA_50"</span><span class="p">]</span> <span class="o">=</span> <span class="n">fondo_index_full</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">tech_full</span><span class="p">[</span><span class="s2">"SMA_200"</span><span class="p">]</span> <span class="o">=</span> <span class="n">fondo_index_full</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="c1"># Simple Moving Average (10-day) of the fondo's price level (equal-weighted index)</span>
-<span class="n">fondo_index</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">fondo_return</span><span class="p">)</span><span class="o">.</span><span class="n">cumprod</span><span class="p">()</span>
-<span class="n">tech</span><span class="p">[</span><span class="s2">"SMA_10"</span><span class="p">]</span> <span class="o">=</span> <span class="n">fondo_index</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># RSI (14-day)</span>
-<span class="n">delta</span> <span class="o">=</span> <span class="n">fondo_index</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="n">fondo_index_full</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
 <span class="n">gain</span> <span class="o">=</span> <span class="n">delta</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">delta</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
 <span class="n">loss</span> <span class="o">=</span> <span class="o">-</span><span class="n">delta</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">delta</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
 <span class="n">avg_gain</span> <span class="o">=</span> <span class="n">gain</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">avg_loss</span> <span class="o">=</span> <span class="n">loss</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">rs</span> <span class="o">=</span> <span class="n">avg_gain</span> <span class="o">/</span> <span class="n">avg_loss</span>
-<span class="n">tech</span><span class="p">[</span><span class="s2">"RSI_14"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="p">(</span><span class="mi">100</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">rs</span><span class="p">)))</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">tech_full</span><span class="p">[</span><span class="s2">"RSI_14"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="p">(</span><span class="mi">100</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">rs</span><span class="p">)))</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="n">tech</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">tech_full</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7820,163 +7904,32 @@ Name: Fondo_Return, dtype: float64</pre>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[10]</span><span class="ansi-green-fg">, line 1</span>
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> tech_full = pd.DataFrame(index=<span class="ansi-yellow-bg">fondo_return_full</span>.index)
+<span class="ansi-green-fg">      3</span> tech_full[<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">Lag_Return</span><span class="ansi-yellow-fg">"</span>] = fondo_return_full.shift(<span class="ansi-green-fg">1</span>)
+<span class="ansi-green-fg">      4</span> tech_full[<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">SMA_50</span><span class="ansi-yellow-fg">"</span>] = fondo_index_full.rolling(window=<span class="ansi-green-fg">50</span>).mean().shift(<span class="ansi-green-fg">1</span>)
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>Lag_Return</th>
-<th>SMA_10</th>
-<th>RSI_14</th>
-</tr>
-<tr>
-<th>Date</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>2024-09-04</th>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-05</th>
-<td>-0.000611</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-06</th>
-<td>-0.002756</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-09</th>
-<td>-0.009593</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-10</th>
-<td>0.009042</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-11</th>
-<td>-0.003491</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-12</th>
-<td>0.005084</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-13</th>
-<td>0.007378</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-16</th>
-<td>0.001210</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-17</th>
-<td>-0.000680</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-18</th>
-<td>0.000333</td>
-<td>0.999152</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-19</th>
-<td>-0.000439</td>
-<td>0.999748</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-20</th>
-<td>0.008327</td>
-<td>1.001458</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-23</th>
-<td>-0.004039</td>
-<td>1.003713</td>
-<td>NaN</td>
-</tr>
-<tr>
-<th>2024-09-24</th>
-<td>0.001920</td>
-<td>1.005270</td>
-<td>61.236428</td>
-</tr>
-<tr>
-<th>2024-09-25</th>
-<td>0.006583</td>
-<td>1.007841</td>
-<td>65.477590</td>
-</tr>
-<tr>
-<th>2024-09-26</th>
-<td>-0.003912</td>
-<td>1.009509</td>
-<td>64.181634</td>
-</tr>
-<tr>
-<th>2024-09-27</th>
-<td>-0.000816</td>
-<td>1.010358</td>
-<td>74.685994</td>
-</tr>
-<tr>
-<th>2024-09-30</th>
-<td>-0.005057</td>
-<td>1.010573</td>
-<td>62.403809</td>
-</tr>
-<tr>
-<th>2024-10-01</th>
-<td>0.000711</td>
-<td>1.010928</td>
-<td>67.615956</td>
-</tr>
-</tbody>
-</table>
+<span class="ansi-red-fg">NameError</span>: name 'fondo_return_full' is not defined</pre>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2f407e77">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Through .shift(1), we built an initial independent variable, we moved every value ofthe portfolio or fund returns down one row, so now any given date showsyesterdays return, this to keep it realistic. In order to use information that already existed to predict the next day.</p>
+<p>After that, we leverage code to build the SMA 50 and SMA200 indicators, as well as the RSI, some technical indicators that we will leverage as independent variables.
+Then we were able to visualize a few rows of our data fram with the values of the returns and indicators.</p>
 </div>
 </div>
 </div>
@@ -7985,10 +7938,10 @@ Name: Fondo_Return, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">macro_tickers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"^GSPC"</span><span class="p">,</span> <span class="s2">"^MXX"</span><span class="p">,</span> <span class="s2">"^TNX"</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">macro_tickers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"^GSPC"</span><span class="p">,</span> <span class="s2">"^MXX"</span><span class="p">,</span> <span class="s2">"^TNX"</span><span class="p">]</span>  <span class="c1"># S&amp;P 500, IPC (Mexico), 10-Year Treasury Yield</span>
 <span class="n">macro_data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">macro_tickers</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end_date</span><span class="p">,</span> <span class="n">auto_adjust</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">"Close"</span><span class="p">]</span>
 <span class="n">macro_data</span> <span class="o">=</span> <span class="n">macro_data</span><span class="o">.</span><span class="n">ffill</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 
@@ -8021,7 +7974,7 @@ Name: Fondo_Return, dtype: float64</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8090,12 +8043,24 @@ Name: Fondo_Return, dtype: float64</pre>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8dd3e36b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>As some other independent variables we decided to use the S&amp;P500, the IPC and the index that. reflects the returns of the 10 year US treasury bond.
+In consequence, we also extract this information leveraging yahoo finance, applying thesame cleaning logic as before with the stocks,  and creating a data frame of macroeconomic independent variables.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bbb21cae">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">model_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">fondo_return</span><span class="p">,</span> <span class="n">tech</span><span class="p">,</span> <span class="n">macro_returns_lagged</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -8121,7 +8086,7 @@ Name: Fondo_Return, dtype: float64</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8218,12 +8183,46 @@ Name: Fondo_Return, dtype: float64</pre>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1d0a581d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>At the end,  we. merged all our columns,  our dependent variables (return of ourportfolio created), and the independent variables (technical indicators, as well as macroeconomic variables), here is the justification to use. each of them:</p>
+<h1 id="Dependent-variable-(Portfolio/Fondo-return):">Dependent variable (Portfolio/Fondo return):<a class="anchor-link" href="#Dependent-variable-(Portfolio/Fondo-return):">¶</a></h1><p>Represents the actual outcome of the client´s investment, the logical variable to be the dependent, as the purpose of the type of analysis performed by the firm is to support portfolio decision making.</p>
+<h2 id="Independent-variables">Independent variables<a class="anchor-link" href="#Independent-variables">¶</a></h2><h1 id="1.-Lag_Return-(technical):">1. Lag_Return (technical):<a class="anchor-link" href="#1.-Lag_Return-(technical):">¶</a></h1><p>Representing the portfolio´s own return from the previous day, in order. to test the weak-form Efficient Market Hypothesis (EMH) and momentum/mean-reversion, which examine if past returns carry any information about future returns.</p>
+<h1 id="2.-SMA_50-and-SMA-200-(technical):">2. SMA_50 and SMA 200 (technical):<a class="anchor-link" href="#2.-SMA_50-and-SMA-200-(technical):">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5555b3c0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=18e9aee0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9c4cda03">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -8270,7 +8269,7 @@ dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
@@ -8316,7 +8315,7 @@ dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
@@ -8345,7 +8344,7 @@ dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
